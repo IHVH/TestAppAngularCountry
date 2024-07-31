@@ -1,7 +1,3 @@
-
-using EntitiesDAL.Models;
-using EntitiesDAL.PostgreSQL;
-using Microsoft.AspNetCore.Identity;
 using TestAppAngularCountry.Server.Extensions;
 
 namespace TestAppAngularCountry.Server

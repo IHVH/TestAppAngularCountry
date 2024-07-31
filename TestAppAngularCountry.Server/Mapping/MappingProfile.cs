@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using EntitiesDAL.Models;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using TestAppAngularCountry.Server.DataTransferObjects;
 
 namespace TestAppAngularCountry.Server.Mapping

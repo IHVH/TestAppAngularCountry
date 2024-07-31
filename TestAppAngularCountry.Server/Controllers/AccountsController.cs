@@ -3,7 +3,6 @@ using EntitiesDAL.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using TestAppAngularCountry.Server.DataTransferObjects;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace TestAppAngularCountry.Server.Controllers
 {
