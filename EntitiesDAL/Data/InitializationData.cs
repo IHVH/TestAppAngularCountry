@@ -16,10 +16,10 @@ namespace EntitiesDAL.Data
             Country de = new() { Id = 2, Name = "Germany", Code = "DE" };
 
 
-            Province ru_spb = new() { Id = 1, Country = ru, CountryId = ru.Id, Name = "Saint Petersburg" };
-            Province ru_sta = new() { Id = 2, Country = ru, CountryId = ru.Id, Name = "Stavropol region" };
-            Province de_he = new() { Id = 3, Country = de, CountryId = de.Id, Name = "Hesse" };
-            Province de_by = new() { Id = 4, Country = de, CountryId = de.Id, Name = "Bavaria" };
+            Province ru_spb = new() { Id = 1, CountryId = ru.Id, Name = "Saint Petersburg" };
+            Province ru_sta = new() { Id = 2, CountryId = ru.Id, Name = "Stavropol region" };
+            Province de_he = new() { Id = 3, CountryId = de.Id, Name = "Hesse" };
+            Province de_by = new() { Id = 4, CountryId = de.Id, Name = "Bavaria" };
 
             return (
                 [ru, de], 

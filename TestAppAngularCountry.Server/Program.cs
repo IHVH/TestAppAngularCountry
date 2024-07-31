@@ -1,4 +1,9 @@
 
+using EntitiesDAL.Models;
+using EntitiesDAL.PostgreSQL;
+using Microsoft.AspNetCore.Identity;
+using TestAppAngularCountry.Server.Extensions;
+
 namespace TestAppAngularCountry.Server
 {
     public class Program
@@ -14,6 +19,12 @@ namespace TestAppAngularCountry.Server
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.AddAppLogging();
+            builder.AddAppDataBase();
+            builder.AddIdentity();
+
+            builder.Services.AddAutoMapper(typeof(Program));
+            
             var app = builder.Build();
 
             app.UseDefaultFiles();
