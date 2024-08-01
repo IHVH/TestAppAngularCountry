@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/TestAppAngularCountry.Server/TestAppAngular.db
+/TestAppAngularCountry.Server/TestAppAngular.db-shm
+/TestAppAngularCountry.Server/TestAppAngular.db-wal

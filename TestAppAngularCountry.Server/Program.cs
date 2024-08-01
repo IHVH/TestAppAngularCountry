@@ -15,6 +15,7 @@ namespace TestAppAngularCountry.Server
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.ConfigureCors();
             builder.AddAppLogging();
             builder.AddAppDataBase();
             builder.AddIdentity();
@@ -34,6 +35,8 @@ namespace TestAppAngularCountry.Server
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 

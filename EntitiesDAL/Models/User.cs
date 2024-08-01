@@ -10,5 +10,6 @@ namespace EntitiesDAL.Models
         public int? CountryId { get; set; }
         public Province? Province { get; set; }
         public int? ProvinceId { get; set; }
+        public bool Agree { get; set; }
     }
 }

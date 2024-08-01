@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiesDAL", "EntitiesDAL\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiesDAL.PostgreSQL", "EntitiesDAL.PostgreSQL\EntitiesDAL.PostgreSQL.csproj", "{C54C74C2-7181-4B6D-B5C2-D6271403B327}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiesDAL.SQLite", "EntitiesDAL.SQLite\EntitiesDAL.SQLite.csproj", "{C44FB10F-BA3F-4625-B018-64FB26BD79B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{C54C74C2-7181-4B6D-B5C2-D6271403B327}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C54C74C2-7181-4B6D-B5C2-D6271403B327}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C54C74C2-7181-4B6D-B5C2-D6271403B327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C44FB10F-BA3F-4625-B018-64FB26BD79B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C44FB10F-BA3F-4625-B018-64FB26BD79B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C44FB10F-BA3F-4625-B018-64FB26BD79B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C44FB10F-BA3F-4625-B018-64FB26BD79B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,13 +1,12 @@
 ﻿using EntitiesDAL.Interfaces.Repositories;
-using EntitiesDAL.PostgreSQL.Repositories;
-using Microsoft.Extensions.Configuration;
+using EntitiesDAL.SQLite.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace EntitiesDAL.PostgreSQL.Extensions
+namespace EntitiesDAL.SQLite.Extensions
 {
-    public static class RepoPostgreManagerExtension
+    public static class RepoSQLiteManagerExtension
     {
-        public static void AddPostgreSQLRepositories(this IServiceCollection services)
+        public static void AddSQLiteRepositories(this IServiceCollection services)
         {
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ICountryRepository, CountryRepository>();

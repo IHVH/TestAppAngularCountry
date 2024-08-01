@@ -6,7 +6,7 @@ namespace EntitiesDAL.PostgreSQL
     {
         public AppPostgreSQLContext(DbContextOptions<AppPostgreSQLContext> options) : base(options)
         {
-            Database.EnsureCreated();
+            Database.Migrate();
         }
     }
 }

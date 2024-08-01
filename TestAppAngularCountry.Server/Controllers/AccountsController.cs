@@ -6,6 +6,8 @@ using TestAppAngularCountry.Server.DataTransferObjects;
 
 namespace TestAppAngularCountry.Server.Controllers
 {
+    [Route("api/accounts")]
+    [ApiController]
     public class AccountsController : Controller
     {
         private readonly ILogger _logger;

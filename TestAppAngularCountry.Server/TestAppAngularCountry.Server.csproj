@@ -15,11 +15,16 @@
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
       <Version>8.*-*</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\EntitiesDAL.PostgreSQL\EntitiesDAL.PostgreSQL.csproj" />
+    <ProjectReference Include="..\EntitiesDAL.SQLite\EntitiesDAL.SQLite.csproj" />
     <ProjectReference Include="..\EntitiesDAL\EntitiesDAL.csproj" />
     <ProjectReference Include="..\testappangularcountry.client\testappangularcountry.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
