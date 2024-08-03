@@ -1,9 +1,9 @@
 ﻿using EntitiesDAL.Interfaces.Repositories;
-using EntitiesDAL.Models;
+using EntitiesDAL.Repositories;
 
 namespace EntitiesDAL.PostgreSQL.Repositories
 {
-    public class ProvinceRepository : TestAppRepository<Province>, IProvinceRepository
+    public class ProvinceRepository : ProvinceRepositoryBase, IProvinceRepository
     {
         private readonly AppPostgreSQLContext _db;
 

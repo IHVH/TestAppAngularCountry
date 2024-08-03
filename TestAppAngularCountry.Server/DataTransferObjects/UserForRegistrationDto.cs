@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using EntitiesDAL.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace TestAppAngularCountry.Server.DataTransferObjects
 {

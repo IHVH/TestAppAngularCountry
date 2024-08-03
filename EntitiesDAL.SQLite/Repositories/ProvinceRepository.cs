@@ -1,9 +1,10 @@
 ﻿using EntitiesDAL.Interfaces.Repositories;
 using EntitiesDAL.Models;
+using EntitiesDAL.Repositories;
 
 namespace EntitiesDAL.SQLite.Repositories
 {
-    public class ProvinceRepository : TestAppRepository<Province>, IProvinceRepository
+    public class ProvinceRepository : ProvinceRepositoryBase, IProvinceRepository
     {
         private readonly AppSQLiteContext _db;
 

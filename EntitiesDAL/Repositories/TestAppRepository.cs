@@ -1,7 +1,7 @@
 ﻿using EntitiesDAL.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace EntitiesDAL
+namespace EntitiesDAL.Repositories
 {
     public abstract class TestAppRepository<T> : ITestAppRepository<T> where T : class
     {
@@ -62,14 +62,14 @@ namespace EntitiesDAL
 
         public virtual void Dispose(bool disposing)
         {
-            if (!this.disposed)
+            if (!disposed)
             {
                 if (disposing)
                 {
                     _db.Dispose();
                 }
             }
-            this.disposed = true;
+            disposed = true;
         }
 
         public void Dispose()

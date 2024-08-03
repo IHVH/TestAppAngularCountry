@@ -10,6 +10,10 @@ namespace TestAppAngularCountry.Server.Mapping
         {
             CreateMap<UserForRegistrationDto, User>()
                 .ForMember(u => u.UserName, opt => opt.MapFrom(x => x.Email));
+
+            CreateMap<Country, CountryDto>();
+
+            CreateMap<Province, ProvinceDto>();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using EntitiesDAL.Interfaces.Repositories;
 using EntitiesDAL.Models;
+using EntitiesDAL.Repositories;
 
 namespace EntitiesDAL.PostgreSQL.Repositories
 {
