@@ -8,8 +8,8 @@
     <PublishAssetsDirectory>$(MSBuildProjectDirectory)\dist\testappangularcountry.client\</PublishAssetsDirectory>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="src\app\_interfaces\user\" />
     <Folder Include="src\app\_interfaces\response\" />
+    <Folder Include="src\assets\fonts\" />
     <Folder Include="src\environments\" />
   </ItemGroup>
 </Project>

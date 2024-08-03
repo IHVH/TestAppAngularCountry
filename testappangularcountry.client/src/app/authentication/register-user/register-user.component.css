@@ -1,14 +1,37 @@
 em {
   color: #e71515;
-  font-weight: bold;
+}
+
+label{
+    margin-right: 10px;
+}
+
+select{
+    width: 40%;
 }
 
 .ng-invalid.ng-touched {
   border-color: red;
 }
 
-.card {
-  margin-top: 10px;
-  background-color: #fff;
-  box-shadow: 1px 1px 1px #cabcbc;
+.cols {
+  white-space: nowrap;
+}
+
+.cols-item1 {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  text-align:right;
+}
+
+.cols-item2 {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.alert {
+  background: #ea8d8d;
 }
