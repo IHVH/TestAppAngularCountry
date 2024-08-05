@@ -43,7 +43,7 @@ export class RegisterUserComponent implements OnInit {
     this.registerForm = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', [Validators.required,
-      Validators.minLength(this.passMinLength), Validators.maxLength(this.passMaxLength), Validators.pattern(this.passPattern)]),
+        Validators.minLength(this.passMinLength), Validators.maxLength(this.passMaxLength), Validators.pattern(this.passPattern)]),
       confirm: new FormControl(''),
       agree: new FormControl('', [Validators.requiredTrue])
     });
@@ -137,7 +137,7 @@ export class RegisterUserComponent implements OnInit {
     console.log(this.updateForm.value);
   }
 
-  private updateUser = (formValue: any) => {
+  public updateUser = (formValue: any) => {
     this.showError = false;
     const updateFormValues = { ...formValue };
     const userUpdate: UserForUpdateDto = {

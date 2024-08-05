@@ -76,7 +76,6 @@
         </div>
         <div class="cols-item2">
           <select formControlName="country" id="country" (change)="onCountryChange()">
-            <!--<option [ngValue]="null" selected disabled>Select country</option>-->
             <option *ngFor="let country of countries" [ngValue]="country" [attr.selected]="country.selected" [attr.disabled]="country.disabled">
               {{ country.name }}
             </option>
@@ -92,7 +91,6 @@
         </div>
         <div class="cols-item2">
           <select formControlName="province" id="province" (change)="onProvinceChange()">
-            <!--<option [ngValue]="null" selected disabled>Please select country first</option>-->
             <option *ngFor="let province of provinces" [ngValue]="province" [attr.selected]="province.selected" [attr.disabled]="province.disabled">
               {{ province.name }}
             </option>
